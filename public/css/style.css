@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Tela inicial*/
+
+.container-ti {
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  background-color: #FB6B6B;
+  border: 1px solid #DBDBDB;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-ti img {
+  width: 100%;
+  max-width: 136px;
+  height: 161px;
+  
+}
+
+.container-ti p {
+
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.container-ti input {
+  width: 100%;
+  max-width: 246px;
+  height: 54px;
+  background: #FFFFFF;
+  border: 1px solid #D70900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #D70900;
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*Tela inicial*/
+
+
+/*Tela jogo*/
+
+.container-telajogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header img {
+  width: 52px;
+  height: 60px;
+  margin-right: 20px;
+}
+.header p {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+  color: white;
+}
+
+.pergunta {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 65px;
+  background-color: white;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.pergunta p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.pergunta img {
+  align-self: center;
+  width: 20px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.perguntacont{
+  width: 299px;
+  height: 131px;
+  background: #FFFFD5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-bottom: 5px;
+}
+
+.perguntacont p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  align-self: flex-start;
+}
+
+.perguntacont img {
+  width: 30px;
+  height: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+/*Tela jogo*/
