@@ -1,7 +1,8 @@
-import CardResposta from "./CardResposta"
 import React from "react";
+import CardResposta from "./CardResposta"
+import CardPergunta from "./CardPergunta";
 
-export default function CardPergunta(){
+export default function Card({setIcones, numpergunta, setNumpergunta, setInicio}){
     const options = [
         {
             pergunta:"O que é JSX",
@@ -33,7 +34,7 @@ export default function CardPergunta(){
         },
         {
             pergunta:"Usamos estado (state) para __ ",
-            resposta:"dizer para o React quais informações quando dizer para o React quais informações quando "
+            resposta:"dizer para o React quais informações quando atualizadas devem renderizar a tela novamente "
         }
     ]
 
@@ -48,18 +49,16 @@ export default function CardPergunta(){
         optionsPergunta.push(option);
     } 
     const [tela, setTela] = React.useState(true)
-
+    const [perguntas, setPerguntas] = React.useState(optionsPergunta)
+    console.log(perguntas[0].pergunta)
+    
     return (
         <>
-            {tela ? (
-                <div className="perguntacont">
-                    <p>{optionsPergunta[0].pergunta}</p>
-                    <img onClick={() => setTela(!tela)} src="img/virar.svg" alt="virar.svg"/>
-                </div>
-            ) : (
-                <CardResposta/>
+             {tela ? (
+                <CardPergunta pergunta={perguntas[0].pergunta} tela={tela} settela={setTela}/>
+                ) : (
+                <CardResposta setIcones={setIcones} numpergunta={numpergunta} setNumpergunta={setNumpergunta} setInicio={setInicio} resposta={perguntas[0].resposta}/>
             )}
         </>
-        
     )
 }

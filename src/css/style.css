@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .container-ti img {
@@ -157,4 +158,117 @@
   align-self: flex-end;
   cursor: pointer;
 }
+
+.cardresposta {
+  display: flex;
+  flex-direction: column;
+  width: 299px;
+  min-height: 131px;
+  background: #FFFFD5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.cardresposta p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+.cardresposta .btns{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.cardresposta button {
+  width: 85.17px;
+  height: 37.17px;
+  background: #FF3030;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardresposta button:nth-of-type(2){
+  background: #FF922E;
+}
+
+.cardresposta button:nth-of-type(3){
+  background: #2FBE34;
+}
+
+.cardresposta button p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.concluido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.concluido p {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  color: #333333;
+}
+
+.imgs {
+  display: flex;
+  
+}
+
+.imgs img{
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.respondido.pergunta p {
+  color: red;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.pergunta.quasenaolembrei p {
+  color: #FF922E;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.pergunta.zap, .pergunta.quasenaolembrei, .respondido.pergunta {
+  pointer-events: none;
+}
+
+.pergunta.zap p{
+  color: #2FBE34;
+  text-decoration: line-through;
+  
+}
+
+
 /*Tela jogo*/
