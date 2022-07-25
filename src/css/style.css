@@ -191,6 +191,7 @@
   background: #FF3030;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .cardresposta button:nth-of-type(2){
