@@ -9,6 +9,7 @@ export default function CardResposta({setIcones, numpergunta, resposta, setNumpe
 
     return(
         <div className="cardresposta">
+            <div></div>
             <p>{resposta}</p>
             <div className="btns">
                 <button onClick={() => handleClick("naolembrei")}>Não lembrei</button>

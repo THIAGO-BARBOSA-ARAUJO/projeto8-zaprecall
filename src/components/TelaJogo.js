@@ -7,6 +7,7 @@ export default function TelaJogo(){
     const numper = [1, 2, 3, 4]
     const [numpergunta, setNumpergunta] = React.useState(0)
     const [icones, setIcones] = React.useState([])
+    
     return(
         <div className="container-telajogo">
             <div className="header">
@@ -14,9 +15,9 @@ export default function TelaJogo(){
                 <p>ZapRecall</p>
             </div>
             <div className="perguntas">
-            {numper.map((data)=>{
+            {numper.map((data, key)=>{
                 return(
-                    <Pergunta setIcones={setIcones} numpergunta={numpergunta} setNumpergunta={setNumpergunta} numero={data} />
+                    <Pergunta key={key} setIcones={setIcones} numpergunta={numpergunta} setNumpergunta={setNumpergunta} numero={data} />
                 )
             })}        
             </div>

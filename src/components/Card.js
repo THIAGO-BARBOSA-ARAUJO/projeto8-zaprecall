@@ -50,7 +50,7 @@ export default function Card({setIcones, numpergunta, setNumpergunta, setInicio}
     } 
     const [tela, setTela] = React.useState(true)
     const [perguntas, setPerguntas] = React.useState(optionsPergunta)
-    console.log(perguntas[0].pergunta)
+    
     
     return (
         <>
